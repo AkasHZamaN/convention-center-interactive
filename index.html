@@ -226,13 +226,58 @@
           </div>
         </section>
         <!-- question section ended  -->
+        
 
 
+        <section class="container mt-5">
+            <h1 class="mt-5 text-center text-warning">Subscriber Updates !!</h1>
 
+            <hr style="border-bottom: 3px solid rgb(233, 126, 126); width:80%; margin:auto;">
+            <articale class="row d-flex justify-content-center align-items-center p-3">
+                <articale class="col">
+                  <a href=""><img class="w-75" src="icons/mobile.png" alt=""></i></a>
+                </articale>
+              <article class="col">
+                <h5 class="fw-bolder">Subscribe To Our Newsletter</h5>
+                <small class="fw-normal ">Get all the latst information on events, Sales and Offers.</small>
+              </article>
+              
+              <form class="d-flex w-100">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </articale>
+      
+        </section>
+
+        <!-- alert option  -->
+        
+        
+          <div class="container mt-5">
+            <h2 class="text-success">Alert Messages</h2>
+          <p>Click on the "x" symbol to close the alert message.</p>
+        <div class="alert success">
+          <span class="closebtn">&times;</span>  
+          <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+          </div>
+        
 
     </main>
 
     <!-- main area ended  -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -271,5 +316,19 @@
 
      <!-- bootstrap js link  -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
+     <!-- alart option  -->
+     <script>  
+      var close = document.getElementsByClassName("closebtn");
+      var i;
+      
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function(){
+          var div = this.parentElement;
+          div.style.opacity = "0";
+          setTimeout(function(){ div.style.display = "none"; }, 600);
+        }
+      }
+      </script>
 </body>
 </html>
