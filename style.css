@@ -6,6 +6,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+main{
+    background-color: #FFFFFF;
+}
 
 .col .item-card{ 
     padding: 5px;
@@ -38,5 +41,9 @@ i{
     border-radius: 25px;
     padding-bottom: 5px;
    
+}
+
+.bg-primary-hdr-ftr{
+    background-color: #03203C;
 }
 
